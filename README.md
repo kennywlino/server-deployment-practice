@@ -6,13 +6,13 @@
 
 ### Problem Domain  
 
-Concise Description of why this app exists
+This application servers as an example for how to create and deploy a server with our own custom middleware and handlers.
 
 ### Links and Resources
 
-- [ci/cd](http://xyz.com) (GitHub Actions)
-- [back-end server url](http://xyz.com) (when applicable)
-- [front-end application](http://xyz.com) (when applicable)
+- [ci/cd](https://github.com/kennywlino/server-deployment-practice/actions)
+- [back-end server (production)](https://dashboard.render.com/web/srv-ce2l93da49927285l90g/deploys/dep-ce2lcgsgqg4a25bjkd20)
+- [PR from dev](https://github.com/kennywlino/server-deployment-practice/pull/1)
 
 ### Setup
 
@@ -21,7 +21,6 @@ Concise Description of why this app exists
 i.e.
 
 - `PORT` - Port Number
-- `DATABASE_URL` - URL to the running Postgres instance/db
 
 #### How to initialize/run your application
 
@@ -31,18 +30,23 @@ i.e.
 
 #### Features / Routes
 
-- Feature 1: deploy to dev
-- GET : `/` - specific route to hit
-- GET : `bad` - specific route to hit
+- GET : `/` - default route to hit
+- GET: `/bad` - route for testing errors
 
-- Feature 2: deploy to prod
-- GET : `/hello` - specific route to hit
-- GET: `/bad` - specific route to hit
+**Middleware**
+
+- logger.js - a basic, custom middleware that logs the date
+
+**Handlers**
+
+- 404.js -- handles 404 errors
+- 500.js -- handles 500 errors
 
 #### Tests
 
 - How do you run tests?
   - npm test
+
 - Any tests of note?
   - handles root path
   - handles invalid requests
@@ -50,4 +54,4 @@ i.e.
 
 #### UML
 
-Link to an image of the UML for your application and response to events
+![Class-01 UML](./assets/class-01_UML.png)
