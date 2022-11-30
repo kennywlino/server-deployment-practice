@@ -11,7 +11,7 @@ This application servers as an example for how to create and deploy a server wit
 ### Links and Resources
 
 - [ci/cd](https://github.com/kennywlino/server-deployment-practice/actions)
-- [back-end server (production)](https://dashboard.render.com/web/srv-ce2l93da49927285l90g/deploys/dep-ce2lcgsgqg4a25bjkd20)
+- [back-end server (production)](https://server-deployment-service.onrender.com/)
 - [PR from dev](https://github.com/kennywlino/server-deployment-practice/pull/1)
 
 ### Setup
